@@ -2,230 +2,77 @@
 <html lang="ar" dir="rtl">
 <head>
     <meta charset="UTF-8">
-    <title>اليمن – روح صنعاء</title>
-    <style>
-        body {
-            margin: 0;
-            font-family: "Tahoma", sans-serif;
-            background: #0b1a10;
-            color: #f5f5f5;
-        }
-
-        header {
-            background: linear-gradient(135deg, #145a32, #196f3d);
-            padding: 25px 10%;
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            border-bottom: 3px solid #c0a16b;
-        }
-
-        .logo-text {
-            font-size: 26px;
-            font-weight: bold;
-            letter-spacing: 2px;
-        }
-
-        .aseeb {
-            border: 2px solid #c0a16b;
-            padding: 8px 16px;
-            border-radius: 50px;
-            font-size: 14px;
-        }
-
-        nav a {
-            color: #f5f5f5;
-            text-decoration: none;
-            margin-left: 20px;
-            font-size: 15px;
-        }
-
-        nav a:hover {
-            text-decoration: underline;
-        }
-
-        .hero {
-            padding: 60px 10%;
-            background: radial-gradient(circle at top, #145a32 0, #0b1a10 55%);
-            text-align: center;
-        }
-
-        .hero h1 {
-            font-size: 40px;
-            margin-bottom: 15px;
-        }
-
-        .hero p {
-            font-size: 18px;
-            line-height: 1.8;
-            max-width: 700px;
-            margin: 0 auto;
-        }
-
-        .tagline {
-            margin-top: 20px;
-            font-size: 16px;
-            color: #c0ffb3;
-        }
-
-        section {
-            padding: 50px 10%;
-            border-top: 1px solid #1f2f23;
-        }
-
-        h2 {
-            font-size: 26px;
-            margin-bottom: 15px;
-            color: #e0e0e0;
-        }
-
-        .yemen-info p,
-        .anthem p,
-        .message p {
-            line-height: 1.9;
-            font-size: 16px;
-        }
-
-        .card {
-            background: #111d14;
-            border: 1px solid #2e3f31;
-            border-radius: 10px;
-            padding: 20px;
-            margin-top: 15px;
-        }
-
-        .anthem-box {
-            background: #151f16;
-            border-radius: 10px;
-            padding: 20px;
-            border: 1px dashed #c0a16b;
-            font-size: 15px;
-            line-height: 2;
-            white-space: pre-line;
-        }
-
-        .note {
-            font-size: 13px;
-            color: #aaaaaa;
-            margin-top: 8px;
-        }
-
-        footer {
-            text-align: center;
-            padding: 25px 10%;
-            border-top: 2px solid #c0a16b;
-            background: #050a06;
-            font-size: 14px;
-            margin-top: 40px;
-        }
-
-        .made-by {
-            margin-top: 8px;
-            color: #c0a16b;
-            font-weight: bold;
-        }
-
-        @media (max-width: 768px) {
-            header {
-                flex-direction: column;
-                align-items: flex-start;
-            }
-            nav {
-                margin-top: 10px;
-            }
-            .hero h1 {
-                font-size: 30px;
-            }
-        }
-    </style>
+    <title>اليمن – موقع صنعاني مراني</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<header>
-    <div class="logo-text">اليمن – صنعاء الأصالة</div>
-    <div class="aseeb">🌿 روح العسيب و الــبندق</div>
+<header class="header">
+    <div class="logo">🇾🇪 اليمن – روح صنعاء</div>
     <nav>
-        <a href="#yemen">عن اليمن</a>
-        <a href="#anthem">النشيد اليمني</a>
+        <a href="#about">عن اليمن</a>
+        <a href="#anthem">النشيد الوطني</a>
+        <a href="#culture">الثقافة اليمنية</a>
         <a href="#message">كلمة لليمن</a>
     </nav>
 </header>
 
 <section class="hero">
-    <h1>اليمن… أرض السبأ، وموطن القلوب الصافية</h1>
-    <p>
-        من قمم صنعاء الباردة، إلى سواحل عدن الدافئة، ومن حضرموت العريقة إلى تهامة البسيطة،
-        يظل اليمن حكاية تاريخ، ودفء ناس، وعزة لا تنكسر.
-    </p>
-    <div class="tagline">هنا موقع يمني صنعاني، بطابع العسيب والبندق، وحب ما ينتهي لليمن.</div>
+    <h1>اليمن… أرض الأصالة والعزة</h1>
+    <p>من صنعاء القديمة إلى حضرموت، ومن تهامة إلى عدن… هنا وطن لا يشبهه وطن.</p>
+    <div class="aseeb">⚔️ العسيب والبندق – رمز الرجولة والهوية</div>
 </section>
 
-<section id="yemen" class="yemen-info">
+<section id="about" class="section">
     <h2>عن اليمن</h2>
     <div class="card">
         <p>
-            **اليمن** بلد عربي يقع في جنوب شبه الجزيرة العربية، يمتد تاريخه لآلاف السنين،
-            من مملكة سبأ وحِمير ومعين، إلى حاضرٍ لا يزال يحمل روح الأصالة رغم كل الظروف.
-        </p>
-        <p>
-            يتميز اليمن بتنوع جغرافي كبير: جبال شاهقة، سهول خصبة، صحارى هادئة، وسواحل طويلة على البحر
-            الأحمر وبحر العرب. هذا التنوع صنع تنوعًا في العادات، اللهجات، الأزياء، والأكلات الشعبية.
-        </p>
-        <p>
-            الإنسان اليمني معروف بكرمه، شهامته، واعتزازه بأرضه وهويته. من القات والعسيب، إلى الزوامل
-            والبرع، تبقى الروح اليمنية حاضرة في كل تفاصيل الحياة اليومية.
+            اليمن بلد الحضارات القديمة، موطن مملكة سبأ وحمير ومعين. أرض البن، واللبان، والجبال الشاهقة،
+            والوديان الخصبة، والبحار الممتدة. شعبه معروف بالكرم والشهامة والوفاء.
         </p>
     </div>
 </section>
 
-<section id="anthem" class="anthem">
+<section id="anthem" class="section">
     <h2>النشيد الوطني اليمني</h2>
     <div class="card">
-        <p>
-            النشيد الوطني للجمهورية اليمنية معروف بـ
-            <strong>«رددي أيتها الدنيا نشيدي»</strong>، وهو من كلمات الشاعر عبد الله عبد الوهاب نعمان
-            وألحان الفنان أيوب طارش.
-        </p>
-        <p class="note">
-            ملاحظة: لأسباب حقوقية، يفضّل أن تقوم أنت بإضافة كلمات النشيد كاملة من مصدر موثوق.
-        </p>
-        <div class="anthem-box">
-ضع هنا كلمات النشيد الوطني اليمني كاملة
-مثال:
-رددي أيتها الدنيا نشيدي
-ردديه وأعيدي وأعيدي
-...
+        <p>النشيد الوطني: <strong>رددي أيتها الدنيا نشيدي</strong></p>
+        <p class="note">لأسباب حقوقية، ضع كلمات النشيد بنفسك هنا:</p>
+        <div class="anthem-box">ضع كلمات النشيد هنا…</div>
+    </div>
+</section>
+
+<section id="culture" class="section">
+    <h2>الثقافة اليمنية</h2>
+    <div class="features">
+        <div class="feature">
+            <h3>⚔️ العسيب</h3>
+            <p>رمز الرجولة والهيبة، يُلبس في المناسبات والزوامل والبرع.</p>
+        </div>
+        <div class="feature">
+            <h3>🔫 البندق</h3>
+            <p>جزء من التراث القبلي، يُستخدم في العرضات والمناسبات.</p>
+        </div>
+        <div class="feature">
+            <h3>🕍 صنعاء القديمة</h3>
+            <p>مدينة من أجمل مدن العالم، ببيوتها الطينية وزخارفها الفريدة.</p>
+        </div>
+        <div class="feature">
+            <h3>💃 البرع اليمني</h3>
+            <p>رقصة تراثية تعبر عن القوة والفرح والهوية.</p>
         </div>
     </div>
 </section>
 
-<section id="message" class="message">
+<section id="message" class="section">
     <h2>كلمة لليمن</h2>
     <div class="card">
         <p>
-            يا يمن… يا أرضًا إذا ذُكرت في القلب، نهضت معها ذاكرة الطفولة، ورائحة البن، وصوت المآذن
-            في صنعاء القديمة. يا وطنًا مهما ابتعدت عنه الأقدام، تظل الأرواح معلّقة بأبوابه، وبكل
-            حجر في أزقته.
-        </p>
-        <p>
-            فيك يتعلم الإنسان معنى الصبر، ومعنى أن تبتسم رغم التعب. فيك نرى الوجوه السمراء المضيئة،
-            والقلوب التي تعطي قبل أن تُسأل، والبيوت التي تُفتح للضيف قبل أن يطرق الباب.
-        </p>
-        <p>
-            يا يمن… سنظل نراك أكبر من كل جرح، وأقوى من كل ظرف. سنحفظ اسمك في الدعاء، ونحمله في
-            الأغاني والزوامل، وفي ضحكات الأطفال، وفي خطوات العائدين إليك مهما طال الغياب.
-        </p>
-        <p>
-            ستبقى رايتك عالية، وأرضك مباركة، وأهلك أعزّة. فاليمن ليس مجرد حدود على خريطة، بل روح
-            تسكن فينا، وحنين لا ينتهي، ووعد بأن الغد سيكون أجمل مهما اشتد الليل.
+            يا يمن… يا وطنًا يسكن في القلب مهما ابتعدت المسافات. يا أرضًا تُنبت الصبر، وتعلّم
+            الإنسان معنى القوة والكرامة. ستظل شامخًا رغم كل الظروف، وسيبقى حبك في القلوب لا يتغير.
         </p>
     </div>
 </section>
 
 <footer>
-    <div>كل الحب والوفاء لليمن، أرضًا وشعبًا وتاريخًا.</div>
-    <div class="made-by">صُنع بفخر من محمد مازن</div>
-</footer>
-
-</body>
-</html>
+    <p>كل الحب وال
